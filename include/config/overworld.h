@@ -26,8 +26,8 @@
 // Configuración del PC
 #define OW_PC_PRESS_B               GEN_LATEST // En Gen4, presionar B mientras sostienes un Pokémon es equivalente a colocarlo. En Gen3, da el error "¡Estás sosteniendo un Pokémon!"
 #define OW_PC_JAPAN_WALDA_ICONS     TRUE       // En la versión de EE.UU. de Emerald, los íconos de Cruz, Rayo y Plusle para los fondos de Walda quedaron en blanco de la versión japonesa. Configurar esto en TRUE los restaurará.
-#define OW_PC_HEAL                  GEN_LATEST // En Gen8+, los Pokémon no se curan cuando se depositan en el PC.
-#define OW_PC_MOVE_ORDER            GEN_LATEST // A partir de Gen4, el orden de opciones en el menú del PC cambia.
+#define OW_PC_HEAL                  GEN_3 // En Gen8+, los Pokémon no se curan cuando se depositan en el PC.
+#define OW_PC_MOVE_ORDER            GEN_4 // A partir de Gen4, el orden de opciones en el menú del PC cambia.
 #define OW_PC_RELEASE_ITEM          GEN_LATEST // En Gen8+, los Pokémon que se liberan con un objeto en mano lo devuelven a la bolsa.
 
 #define OW_BERRY_MUTATIONS             FALSE      // Si está habilitado, las plantas de bayas pueden mutar basándose en las bayas plantadas a su lado.
@@ -57,10 +57,10 @@
 #define OW_MON_WANDER_WALK             TRUE       // Si TRUE, los OW de Pokémon con MOVEMENT_TYPE_WANDER andarán en el sitio entre pasos.
 
 // Pokémon seguidores
-#define OW_FOLLOWERS_ENABLED           FALSE      // Habilita Pokémon seguidores, al estilo de HGSS. Requiere OW_POKEMON_OBJECT_EVENTS. ¡Nota que puede ser necesaria una programación adicional para que se soporten completamente!
+#define OW_FOLLOWERS_ENABLED           TRUE      // Habilita Pokémon seguidores, al estilo de HGSS. Requiere OW_POKEMON_OBJECT_EVENTS. ¡Nota que puede ser necesaria una programación adicional para que se soporten completamente!
 #define OW_FOLLOWERS_BOBBING           TRUE       // Si es verdadero, los Pokémon seguidores se moverán hacia arriba y hacia abajo durante sus animaciones de inactividad y caminata.
 #define OW_FOLLOWERS_POKEBALLS         TRUE       // Los seguidores emergerán de la Pokébola en la que están almacenados, en lugar de una Pokébola normal
-#define OW_FOLLOWERS_WEATHER_FORMS     FALSE      // Si TRUE, Castform y Cherrim ganan FORM_CHANGE_OVERWORLD_WEATHER, lo que los hace transformarse según el clima.
+#define OW_FOLLOWERS_WEATHER_FORMS     TRUE      // Si TRUE, Castform y Cherrim ganan FORM_CHANGE_OVERWORLD_WEATHER, lo que los hace transformarse según el clima.
 #define OW_FOLLOWERS_COPY_WILD_PKMN    FALSE      // Si TRUE, Pokémon followers que conocen Transformación o tienen Ilusión/Impostor copiarán Pokémon salvajes aleatoriamente.
 #define OW_BATTLE_ONLY_FORMS           TRUE       // Si TRUE, carga sprites de OW para Pokémon que son solo formas de batalla, como las Megas. Requiere OW_POKEMON_OBJECT_EVENTS.
 #define B_FLAG_FOLLOWERS_DISABLED      0          // Habilita / Deshabilita followers por flag. Es útil si quieres deshabilitar followers por un período de tiempo.

@@ -2,64 +2,64 @@
 #define GUARD_CONFIG_BATTLE_H
 
 // Configuración de cálculos
-#define B_CRIT_CHANCE               GEN_LATEST // Probabilidades de que un golpe crítico acierte. Consulta CalcCritChanceStage. En Gen6+, las probabilidades garantizan que Farfetch'd y Sirfetch'd siempre obtengan golpes críticos mientras sostengan un Puerro y usen movimientos de alta relación crítica.
-#define B_CRIT_MULTIPLIER           GEN_LATEST // En Gen6+, los golpes críticos multiplican el daño por 1.5 en lugar de 2.
-#define B_PARALYSIS_SPEED           GEN_LATEST // En Gen7+, la Velocidad se reduce en un 50% en lugar de un 75%.
-#define B_CONFUSION_SELF_DMG_CHANCE GEN_LATEST // En Gen7+, la confusión tiene un 33.3% de causar daño a uno mismo, en lugar de un 50%.
-#define B_MULTI_HIT_CHANCE          GEN_LATEST // En Gen5+, los movimientos de múltiples golpes tienen porcentajes diferentes. Consulta Cmd_setmultihitcounter para los valores.
-#define B_WHITEOUT_MONEY            GEN_LATEST // En Gen4+, la cantidad de dinero perdido al perder una batalla se determina por la cantidad de medallas ganadas. Anteriormente, se reducían los fondos actuales a la mitad. (Aunque este cambio también estuvo en FRLG, por simplicidad, establecer esto en GEN_3 resultará en el comportamiento de RSE.)
+#define B_CRIT_CHANCE               GEN_3 // Probabilidades de que un golpe crítico acierte. Consulta CalcCritChanceStage. En Gen6+, las probabilidades garantizan que Farfetch'd y Sirfetch'd siempre obtengan golpes críticos mientras sostengan un Puerro y usen movimientos de alta relación crítica.
+#define B_CRIT_MULTIPLIER           GEN_3 // En Gen6+, los golpes críticos multiplican el daño por 1.5 en lugar de 2.
+#define B_PARALYSIS_SPEED           GEN_3 // En Gen7+, la Velocidad se reduce en un 50% en lugar de un 75%.
+#define B_CONFUSION_SELF_DMG_CHANCE GEN_3 // En Gen7+, la confusión tiene un 33.3% de causar daño a uno mismo, en lugar de un 50%.
+#define B_MULTI_HIT_CHANCE          GEN_3 // En Gen5+, los movimientos de múltiples golpes tienen porcentajes diferentes. Consulta Cmd_setmultihitcounter para los valores.
+#define B_WHITEOUT_MONEY            GEN_3 // En Gen4+, la cantidad de dinero perdido al perder una batalla se determina por la cantidad de medallas ganadas. Anteriormente, se reducían los fondos actuales a la mitad. (Aunque este cambio también estuvo en FRLG, por simplicidad, establecer esto en GEN_3 resultará en el comportamiento de RSE.)
 #define B_LIGHT_BALL_ATTACK_BOOST   GEN_LATEST // En Gen4+, la Bola Luz duplica el poder de los movimientos físicos además de los especiales.
 
 // Configuración de experiencia
-#define B_EXP_CATCH                 GEN_LATEST // En Gen6+, los Pokémon obtienen experiencia al capturar.
-#define B_TRAINER_EXP_MULTIPLIER    GEN_LATEST // En Gen7+, las batallas contra entrenadores ya no dan un multiplicador de 1.5 para la ganancia de EXP.
-#define B_SPLIT_EXP                 GEN_LATEST // En Gen6+, todos los Pokémon participantes obtienen experiencia completa.
-#define B_SCALED_EXP                GEN_LATEST // En Gen5 y Gen7+, la experiencia se pondera según la diferencia de nivel.
-#define B_UNEVOLVED_EXP_MULTIPLIER  GEN_LATEST // En Gen6+, si el Pokémon está en el nivel o más allá del nivel en el que podría evolucionar, pero no lo ha hecho, obtiene un multiplicador de ~1.2 para la ganancia de EXP. Solo se aplica a los Pokémon con el método EVO_LEVEL.
-#define B_LEVEL_UP_NOTIFICATION     GEN_LATEST // En Gen9+, si el Pokémon obtiene suficiente experiencia para subir de nivel varias veces, el mensaje solo se muestra una vez.
+#define B_EXP_CATCH                 GEN_3 // En Gen6+, los Pokémon obtienen experiencia al capturar.
+#define B_TRAINER_EXP_MULTIPLIER    GEN_3 // En Gen7+, las batallas contra entrenadores ya no dan un multiplicador de 1.5 para la ganancia de EXP.
+#define B_SPLIT_EXP                 GEN_3 // En Gen6+, todos los Pokémon participantes obtienen experiencia completa.
+#define B_SCALED_EXP                GEN_3 // En Gen5 y Gen7+, la experiencia se pondera según la diferencia de nivel.
+#define B_UNEVOLVED_EXP_MULTIPLIER  GEN_3 // En Gen6+, si el Pokémon está en el nivel o más allá del nivel en el que podría evolucionar, pero no lo ha hecho, obtiene un multiplicador de ~1.2 para la ganancia de EXP. Solo se aplica a los Pokémon con el método EVO_LEVEL.
+#define B_LEVEL_UP_NOTIFICATION     GEN_3 // En Gen9+, si el Pokémon obtiene suficiente experiencia para subir de nivel varias veces, el mensaje solo se muestra una vez.
 
 // Configuración de estadísticas
-#define B_BADGE_BOOST               GEN_LATEST // En Gen4+, las Medallas de Gimnasio ya no aumentan las estadísticas de un Pokémon.
+#define B_BADGE_BOOST               GEN_3 // En Gen4+, las Medallas de Gimnasio ya no aumentan las estadísticas de un Pokémon.
 #define B_FRIENDSHIP_BOOST          FALSE      // Solo en LGPE, todas las estadísticas excepto HP se incrementan hasta un 10% basado en la Amistad. A diferencia de B_BADGE_BOOST, estos aumentos se tienen en cuenta al calcular las estadísticas base.
-#define B_MAX_LEVEL_EV_GAINS        GEN_LATEST // En Gen5+, los Pokémon de nivel 100 pueden obtener Valores de Esfuerzo normalmente.
-#define B_RECALCULATE_STATS         GEN_LATEST // En Gen5+, las estadísticas de los Pokémon que participan en la batalla se recalculan al final de cada batalla.
+#define B_MAX_LEVEL_EV_GAINS        GEN_3 // En Gen5+, los Pokémon de nivel 100 pueden obtener Valores de Esfuerzo normalmente.
+#define B_RECALCULATE_STATS         GEN_3 // En Gen5+, las estadísticas de los Pokémon que participan en la batalla se recalculan al final de cada batalla.
 
 // Configuración de daño
-#define B_BURN_DAMAGE               GEN_LATEST // En Gen7+, el daño por quemadura es 1/16 de HP máximo en lugar de 1/8. También se aplica a Frostbite.
-#define B_BURN_FACADE_DMG           GEN_LATEST // En Gen6+, el efecto de la quemadura de reducir el stat de Ataque ya no se aplica a Facade.
-#define B_BINDING_DAMAGE            GEN_LATEST // En Gen6+, el daño por movimientos de atadura es 1/8 de HP máximo en lugar de 1/16. (Con Banda de Ataduras, 1/6 y 1/8 respectivamente.)
-#define B_PSYWAVE_DMG               GEN_LATEST // Fórmula de daño de Psywave. Consulta Cmd_psywavedamageeffect.
-#define B_PAYBACK_SWITCH_BOOST      GEN_LATEST // En Gen5+, si el oponente cambia, el daño de Payback ya no se dobla.
-#define B_HIDDEN_POWER_DMG          GEN_LATEST // En Gen6+, el poder base de Hidden Power se establece siempre en 60. Antes, se determinaba por los IVs del Pokémon.
-#define B_ROUGH_SKIN_DMG            GEN_LATEST // En Gen4+, el daño de contacto de Rough Skin es 1/8 de HP máximo en lugar de 1/16. Esto también afectará a Iron Barbs.
-#define B_KNOCK_OFF_DMG             GEN_LATEST // En Gen6+, Knock Off hace un 50% más de daño al quitar un objeto.
-#define B_SPORT_DMG_REDUCTION       GEN_LATEST // En Gen5+, Water/Mud Sport reduce el daño de Fuego/Eléctrico en un 67% en lugar de un 50%.
-#define B_EXPLOSION_DEFENSE         GEN_LATEST // En Gen5+, Self-Destruct y Explosion no reducen a la mitad la defensa de los objetivos.
-#define B_PARENTAL_BOND_DMG         GEN_LATEST // En Gen7+, el segundo golpe de Parental Bond hace el 25% del daño del primer golpe. Antes, hacía el 50%.
-#define B_MULTIPLE_TARGETS_DMG      GEN_LATEST // En Gen4+, el daño causado por movimientos que golpean múltiples objetivos a la vez se reduce al 75%. Antes, era 50%.
+#define B_BURN_DAMAGE               GEN_3 // En Gen7+, el daño por quemadura es 1/16 de HP máximo en lugar de 1/8. También se aplica a Frostbite.
+#define B_BURN_FACADE_DMG           GEN_3 // En Gen6+, el efecto de la quemadura de reducir el stat de Ataque ya no se aplica a Facade.
+#define B_BINDING_DAMAGE            GEN_3 // En Gen6+, el daño por movimientos de atadura es 1/8 de HP máximo en lugar de 1/16. (Con Banda de Ataduras, 1/6 y 1/8 respectivamente.)
+#define B_PSYWAVE_DMG               GEN_3 // Fórmula de daño de Psywave. Consulta Cmd_psywavedamageeffect.
+#define B_PAYBACK_SWITCH_BOOST      GEN_3 // En Gen5+, si el oponente cambia, el daño de Payback ya no se dobla.
+#define B_HIDDEN_POWER_DMG          GEN_3 // En Gen6+, el poder base de Hidden Power se establece siempre en 60. Antes, se determinaba por los IVs del Pokémon.
+#define B_ROUGH_SKIN_DMG            GEN_3 // En Gen4+, el daño de contacto de Rough Skin es 1/8 de HP máximo en lugar de 1/16. Esto también afectará a Iron Barbs.
+#define B_KNOCK_OFF_DMG             GEN_3 // En Gen6+, Knock Off hace un 50% más de daño al quitar un objeto.
+#define B_SPORT_DMG_REDUCTION       GEN_3 // En Gen5+, Water/Mud Sport reduce el daño de Fuego/Eléctrico en un 67% en lugar de un 50%.
+#define B_EXPLOSION_DEFENSE         GEN_3 // En Gen5+, Self-Destruct y Explosion no reducen a la mitad la defensa de los objetivos.
+#define B_PARENTAL_BOND_DMG         GEN_3 // En Gen7+, el segundo golpe de Parental Bond hace el 25% del daño del primer golpe. Antes, hacía el 50%.
+#define B_MULTIPLE_TARGETS_DMG      GEN_3 // En Gen4+, el daño causado por movimientos que golpean múltiples objetivos a la vez se reduce al 75%. Antes, era 50%.
 
 // Configuración de tipos
-#define B_GHOSTS_ESCAPE             GEN_LATEST // En Gen6+, habilidades como Shadow Tag o movimientos como Mean Look fallan contra Pokémon de tipo Fantasma. También pueden escapar de cualquier Batalla Silvestre.
-#define B_PARALYZE_ELECTRIC         GEN_LATEST // En Gen6+, los Pokémon de tipo Eléctrico no pueden ser paralizados.
-#define B_POWDER_GRASS              GEN_LATEST // En Gen6+, los Pokémon de tipo Planta son inmunes a los movimientos de polvo y esporas.
-#define B_UPDATED_TYPE_MATCHUPS     GEN_LATEST // Actualiza las interacciones de tipos. Consulta src/data/types_info.h para detalles.
-#define B_PRANKSTER_DARK_TYPES      GEN_LATEST // En Gen7+, los movimientos de estado elevados por Prankster no afectan a Pokémon de tipo Sombra.
-#define B_SHEER_COLD_IMMUNITY       GEN_LATEST // En Gen7+, los Pokémon de tipo Hielo son inmunes a Sheer Cold.
-#define B_ROOST_PURE_FLYING         GEN_LATEST // En Gen5+, Roost convierte a los tipos de tipo Volador puros en tipo Normal.
-#define B_STATUS_TYPE_IMMUNITY      GEN_LATEST // En Gen1, los Pokémon eran inmunes a los efectos secundarios de parálisis/congelación/quema de movimientos de ataque, si compartían un tipo con el movimiento.
+#define B_GHOSTS_ESCAPE             GEN_3 // En Gen6+, habilidades como Shadow Tag o movimientos como Mean Look fallan contra Pokémon de tipo Fantasma. También pueden escapar de cualquier Batalla Silvestre.
+#define B_PARALYZE_ELECTRIC         GEN_3 // En Gen6+, los Pokémon de tipo Eléctrico no pueden ser paralizados.
+#define B_POWDER_GRASS              GEN_3 // En Gen6+, los Pokémon de tipo Planta son inmunes a los movimientos de polvo y esporas.
+#define B_UPDATED_TYPE_MATCHUPS     GEN_3 // Actualiza las interacciones de tipos. Consulta src/data/types_info.h para detalles.
+#define B_PRANKSTER_DARK_TYPES      GEN_3 // En Gen7+, los movimientos de estado elevados por Prankster no afectan a Pokémon de tipo Sombra.
+#define B_SHEER_COLD_IMMUNITY       GEN_3 // En Gen7+, los Pokémon de tipo Hielo son inmunes a Sheer Cold.
+#define B_ROOST_PURE_FLYING         GEN_3 // En Gen5+, Roost convierte a los tipos de tipo Volador puros en tipo Normal.
+#define B_STATUS_TYPE_IMMUNITY      GEN_3 // En Gen1, los Pokémon eran inmunes a los efectos secundarios de parálisis/congelación/quema de movimientos de ataque, si compartían un tipo con el movimiento.
 
 // Configuración de turnos
-#define B_BINDING_TURNS             GEN_LATEST // En Gen5+, los movimientos de atadura duran 4-5 turnos en lugar de 2-5 turnos. (Con Grip Claw, 7 y 5 turnos respectivamente.)
-#define B_UPROAR_TURNS              GEN_LATEST // En Gen5+, Uproar dura 3 turnos en lugar de 2-5 turnos.
-#define B_UPROAR_IGNORE_SOUNDPROOF  GEN_LATEST // En Gen5+, el estado de Uproar ignora Soundproof.
-#define B_DISABLE_TURNS             GEN_LATEST // Turnos de Disable. Consulta Cmd_disablelastusedattack.
-#define B_TAILWIND_TURNS            GEN_LATEST // En Gen5+, Tailwind dura 4 turnos en lugar de 3.
-#define B_SLEEP_TURNS               GEN_LATEST // En Gen5+, el sueño dura 1-3 turnos en lugar de 2-5 turnos.
-#define B_TAUNT_TURNS               GEN_LATEST // En Gen5+, Taunt dura 3 turnos si el usuario actúa antes que el objetivo, o 4 turnos si el objetivo actúa antes que el usuario. En Gen3, Taunt dura 2 turnos y en Gen4, 3-5 turnos.
-#define B_SPORT_TURNS               GEN_LATEST // En Gen6+, Water/Mud Sport dura 5 turnos, incluso si el usuario cambia de Pokémon.
-#define B_MEGA_EVO_TURN_ORDER       GEN_LATEST // En Gen7, la Velocidad de un Pokémon después de la Mega Evolución se usa para determinar el orden de los turnos, no su Velocidad antes.
-#define B_RECALC_TURN_AFTER_ACTIONS GEN_LATEST // En Gen8, cambiar/usar un movimiento afecta el orden de acciones del turno actual, conocido como velocidad dinámica.
-#define B_FAINT_SWITCH_IN           GEN_LATEST // En Gen4+, enviar un nuevo Pokémon después de que el anterior se desmaye sucede al final del turno. Antes, ocurría después de cada acción.
+#define B_BINDING_TURNS             GEN_3 // En Gen5+, los movimientos de atadura duran 4-5 turnos en lugar de 2-5 turnos. (Con Grip Claw, 7 y 5 turnos respectivamente.)
+#define B_UPROAR_TURNS              GEN_3 // En Gen5+, Uproar dura 3 turnos en lugar de 2-5 turnos.
+#define B_UPROAR_IGNORE_SOUNDPROOF  GEN_3 // En Gen5+, el estado de Uproar ignora Soundproof.
+#define B_DISABLE_TURNS             GEN_3 // Turnos de Disable. Consulta Cmd_disablelastusedattack.
+#define B_TAILWIND_TURNS            GEN_3 // En Gen5+, Tailwind dura 4 turnos en lugar de 3.
+#define B_SLEEP_TURNS               GEN_3 // En Gen5+, el sueño dura 1-3 turnos en lugar de 2-5 turnos.
+#define B_TAUNT_TURNS               GEN_4 // En Gen5+, Taunt dura 3 turnos si el usuario actúa antes que el objetivo, o 4 turnos si el objetivo actúa antes que el usuario. En Gen3, Taunt dura 2 turnos y en Gen4, 3-5 turnos.
+#define B_SPORT_TURNS               GEN_3 // En Gen6+, Water/Mud Sport dura 5 turnos, incluso si el usuario cambia de Pokémon.
+#define B_MEGA_EVO_TURN_ORDER       GEN_3 // En Gen7, la Velocidad de un Pokémon después de la Mega Evolución se usa para determinar el orden de los turnos, no su Velocidad antes.
+#define B_RECALC_TURN_AFTER_ACTIONS GEN_3 // En Gen8, cambiar/usar un movimiento afecta el orden de acciones del turno actual, conocido como velocidad dinámica.
+#define B_FAINT_SWITCH_IN           GEN_4 // En Gen4+, enviar un nuevo Pokémon después de que el anterior se desmaye sucede al final del turno. Antes, ocurría después de cada acción.
 
 // Configuración de datos de movimientos
 #define B_UPDATED_MOVE_DATA         GEN_LATEST // Actualiza los datos de los movimientos en gMovesInfo, incluyendo Poder, Precisión, PP, cambios de estadísticas, objetivos y probabilidades de efectos secundarios.
@@ -70,7 +70,7 @@
 #define B_KLUTZ_FLING_INTERACTION   GEN_LATEST // En Gen5+, los Pokémon con la habilidad Klutz no pueden usar Fling.
 #define B_UPDATED_CONVERSION        GEN_LATEST // En Gen6+, Conversion cambia el tipo del usuario para coincidir con el primer movimiento del usuario. Antes, elegía un movimiento al azar.
 #define B_UPDATED_CONVERSION_2      GEN_LATEST // En Gen5+, Conversión 2 cambia el tipo del usuario a un tipo que resista el último ataque del objetivo. Antes, lo hacía al último ataque recibido. Además, Forcejeo se consideraba tipo Normal antes de 5ª gen.
-#define B_PP_REDUCED_BY_SPITE       GEN_LATEST // En Gen4+, Spite reduce el PP del último movimiento del oponente en 4, en lugar de 2 a 5.
+#define B_PP_REDUCED_BY_SPITE       GEN_4 // En Gen4+, Spite reduce el PP del último movimiento del oponente en 4, en lugar de 2 a 5.
 #define B_EXTRAPOLATED_MOVE_FLAGS   TRUE       // Agrega flags de movimiento a movimientos que no tienen oficialmente pero que probablemente tendrían si estuvieran en el juego de la serie principal más reciente.
 
 // Configuración de datos de habilidades
@@ -173,7 +173,7 @@
 #define B_CONFUSE_BERRIES_HEAL      GEN_LATEST // Antes de Gen7, Figy y bayas similares restauran 1/8 de HP y se activan a la mitad de HP. En Gen7 restauran la mitad de HP, activándose al 25% de HP. En Gen8 curan 1/3 de HP.
 #define B_X_ITEMS_BUFF              GEN_LATEST // En Gen7+, los X Items aumentan una estadística en 2 etapas en lugar de 1.
 #define B_MENTAL_HERB               GEN_LATEST // En Gen5+, Hierba mental cura Mofa, Otra vez, Tormento, Anticura y Anulación además de Enamoramiento.
-#define B_TRAINERS_KNOCK_OFF_ITEMS  TRUE       // Si está habilitado, los entrenadores pueden robar/intercambiar tus ítems (los ítems no bayas se restauran después de la batalla). En los juegos vanilla, los entrenadores no pueden robar ítems.
+#define B_TRAINERS_KNOCK_OFF_ITEMS  FALSE       // Si está habilitado, los entrenadores pueden robar/intercambiar tus ítems (los ítems no bayas se restauran después de la batalla). En los juegos vanilla, los entrenadores no pueden robar ítems.
 #define B_RETURN_STOLEN_NPC_ITEMS   GEN_LATEST // En Gen5+, Ladrón y Antojo ya no roban ítems de NPCs.
 #define B_STEAL_WILD_ITEMS          GEN_LATEST // En Gen9, Ladrón y Antojo roban el objeto a los Pokémon salvajes y los mandan a la mochila. Antes, este era equipado al usuario del ataque.
 #define B_RESTORE_HELD_BATTLE_ITEMS GEN_LATEST // En Gen9, todos los ítems no bayas se restauran después de la batalla.
@@ -242,7 +242,7 @@
 #define B_SHOW_PARTNER_TARGET               FALSE   // Si está habilitado, muestra el objetivo del ataque del compañero.
 
 // Descripción de movimientos
-#define B_SHOW_MOVE_DESCRIPTION             TRUE    // Muestra información del movimiento en batalla
+#define B_SHOW_MOVE_DESCRIPTION             FALSE    // Muestra información del movimiento en batalla
 
 // Weather settings
 // Search for 'rain', 'sunny day', and 'hail' for move-specific or species-specific weather interactions.
@@ -250,8 +250,8 @@
 #define B_ICE_WEATHER_HAIL              1
 #define B_ICE_WEATHER_SNOW              2
 
-#define B_ABILITY_WEATHER               GEN_LATEST // En Gen6+, el clima inducido por habilidades dura 5 turnos. Antes, duraba hasta que terminara la batalla o hasta que fuera cambiado por un movimiento o una habilidad que afecte el clima.
-#define B_SANDSTORM_SPDEF_BOOST         GEN_LATEST // En Gen4+, la Tormenta de Arena multiplica la Defensa Esp. de los Pokémon de tipo Roca por 1.5.
+#define B_ABILITY_WEATHER               GEN_3 // En Gen6+, el clima inducido por habilidades dura 5 turnos. Antes, duraba hasta que terminara la batalla o hasta que fuera cambiado por un movimiento o una habilidad que afecte el clima.
+#define B_SANDSTORM_SPDEF_BOOST         GEN_4 // En Gen4+, la Tormenta de Arena multiplica la Defensa Esp. de los Pokémon de tipo Roca por 1.5.
 #define B_OVERWORLD_FOG                 GEN_LATEST // In Gen8+, overworld Fog summons Misty Terrain in battle. In Gen4 only, overworld Fog summons the unique fog weather condition in battle.
 #define B_OVERWORLD_SNOW                GEN_LATEST // In Gen9+, overworld Snow will summon snow instead of hail in battle.
 #define B_SNOW_WARNING                  GEN_LATEST // En Gen9+, Snow Warning convocará nieve en lugar de granizo.
@@ -278,7 +278,7 @@
 #define B_HIDE_HEALTHBOX_IN_ANIMS   TRUE  // Si se establece en TRUE, se ocultan las cajas de salud durante las animaciones de movimiento.
 #define B_WAIT_TIME_MULTIPLIER      16    // Esto determina cuánto duran las pausas de texto en la batalla. En Vanilla es 16. Valores más bajos resultan en batallas más rápidas.
 #define B_QUICK_MOVE_CURSOR_TO_RUN  FALSE // Si se establece en TRUE, presionar B en las opciones de batalla contra un encuentro salvaje moverá el cursor a la opción de huir.
-#define B_RUN_TRAINER_BATTLE                TRUE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.
+#define B_RUN_TRAINER_BATTLE                FALSE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.
 #define B_MOVE_DESCRIPTION_BUTTON   L_BUTTON // Si se establece en un botón diferente a B_LAST_USED_BALL_BUTTON, presionar este botón abrirá el menú de descripción del movimiento.
 #define B_SHOW_USELESS_Z_MOVE_INFO          FALSE // If set to TRUE, Z-moves without additional effects like newer gen status moves will say "no additional effect"
 #define B_ANIMATE_MON_AFTER_KO              TRUE // If set to TRUE, if a Pokémon on the opposite site faints, the non-fainted Pokemon will display a victory animation.
@@ -303,7 +303,7 @@
 #define B_MULTI_BATTLE_WHITEOUT         GEN_LATEST // En Gen4+, las batallas múltiples terminan cuando el Jugador y también su Compañero no tienen más Pokémon para luchar.
 #define B_EVOLUTION_AFTER_WHITEOUT      GEN_LATEST // En Gen6+, los Pokémon que califican para la evolución después de la batalla evolucionarán incluso si el jugador pierde.
 #define B_WILD_NATURAL_ENEMIES          TRUE       // Si se establece en TRUE, ciertas especies salvajes atacarán a otras especies cuando estén emparejadas en batallas dobles salvajes (por ejemplo, Zangoose vs Seviper).
-#define B_AFFECTION_MECHANICS           TRUE       // En Gen6+, hay una estadística llamada afecto que puede desencadenar diferentes efectos en batalla. A partir de LGPE, esos efectos usan amistad en su lugar.
+#define B_AFFECTION_MECHANICS           FALSE       // En Gen6+, hay una estadística llamada afecto que puede desencadenar diferentes efectos en batalla. A partir de LGPE, esos efectos usan amistad en su lugar.
 #define B_TRAINER_CLASS_POKE_BALLS      GEN_LATEST // En Gen7+, los entrenadores usarán ciertos tipos de Poké Balls según su clase de entrenador.
 #define B_TRAINER_MON_RANDOM_ABILITY    FALSE      // Si se establece en TRUE, se generará una habilidad legal aleatoria para un Pokémon de entrenador.
 #define B_OBEDIENCE_MECHANICS           GEN_LATEST // En PLA+ (aquí Gen8+), las restricciones de obediencia también se aplican a los Pokémon no extranjeros, aunque basadas en su nivel encontrado en lugar de nivel real.

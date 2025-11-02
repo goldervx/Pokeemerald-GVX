@@ -67,7 +67,7 @@
 #define GEN_LATEST GEN_9
 
 // Configuraciones generales
-#define EXPANSION_INTRO              TRUE    // Si está habilitado, se reproducirá una introducción personalizada de RHH después de la pantalla de derechos de autor original.
+#define EXPANSION_INTRO              FALSE    // Si está habilitado, se reproducirá una introducción personalizada de RHH después de la pantalla de derechos de autor original.
 #define HQ_RANDOM                    TRUE    // Si está habilitado, reemplaza el RNG predeterminado con una implementación del RNG SFC32. Puede romper el código que depende del RNG.
 #define AUTO_SCROLL_TEXT             TRUE    // Si está habilitado, el texto automáticamente pasará a la siguiente línea después de NUM_FRAMES_AUTO_SCROLL_DELAY. El jugador todavía podrá pulsar A_BUTTON o B_BUTTON para pasar a la siguiente línea por sí mismo.
 #define NUM_FRAMES_AUTO_SCROLL_DELAY 49

@@ -12,35 +12,35 @@
 #define P_GEN_1_POKEMON                  TRUE // Pokémon de la Generación 1 (RGBY)
 #define P_GEN_2_POKEMON                  TRUE // Pokémon de la Generación 2 (GSC)
 #define P_GEN_3_POKEMON                  TRUE // Pokémon de la Generación 3 (RSE, FRLG)
-#define P_GEN_4_POKEMON                  TRUE // Pokémon de la Generación 4 (DPPt, HGSS)
-#define P_GEN_5_POKEMON                  TRUE // Pokémon de la Generación 5 (BW, B2W2)
-#define P_GEN_6_POKEMON                  TRUE // Pokémon de la Generación 6 (XY, ORAS)
-#define P_GEN_7_POKEMON                  TRUE // Pokémon de la Generación 7 (SM, USUM, LGPE)
-#define P_GEN_8_POKEMON                  TRUE // Pokémon de la Generación 8 (SwSh, BDSP, LA)
-#define P_GEN_9_POKEMON                  TRUE // Pokémon de la Generación 9 (SV)
+#define P_GEN_4_POKEMON                  FALSE // Pokémon de la Generación 4 (DPPt, HGSS)
+#define P_GEN_5_POKEMON                  FALSE // Pokémon de la Generación 5 (BW, B2W2)
+#define P_GEN_6_POKEMON                  FALSE // Pokémon de la Generación 6 (XY, ORAS)
+#define P_GEN_7_POKEMON                  FALSE // Pokémon de la Generación 7 (SM, USUM, LGPE)
+#define P_GEN_8_POKEMON                  FALSE // Pokémon de la Generación 8 (SwSh, BDSP, LA)
+#define P_GEN_9_POKEMON                  FALSE // Pokémon de la Generación 9 (SV)
 
 // Configurar esto a TRUE añadirá las nuevas evoluciones al Dex Regional.
-#define P_NEW_EVOS_IN_REGIONAL_DEX       TRUE
+#define P_NEW_EVOS_IN_REGIONAL_DEX       FALSE
 
 // Formas específicas de gimmicks de batalla.
-#define P_MEGA_EVOLUTIONS                TRUE
-#define P_PRIMAL_REVERSIONS              TRUE // Solo Groudon y Kyogre.
-#define P_ULTRA_BURST_FORMS              TRUE // Solo Ultra Necrozma.
-#define P_GIGANTAMAX_FORMS               TRUE
-#define P_TERA_FORMS                     TRUE
+#define P_MEGA_EVOLUTIONS                FALSE
+#define P_PRIMAL_REVERSIONS              FALSE // Solo Groudon y Kyogre.
+#define P_ULTRA_BURST_FORMS              FALSE // Solo Ultra Necrozma.
+#define P_GIGANTAMAX_FORMS               FALSE
+#define P_TERA_FORMS                     FALSE
 
 // Formas de fusión
-#define P_FUSION_FORMS                   TRUE
+#define P_FUSION_FORMS                   FALSE
 
 // Formas Regionales. Incluye evoluciones de Formas Regionales, como Sirfetch'd.
-#define P_REGIONAL_FORMS                 TRUE
+#define P_REGIONAL_FORMS                 FALSE
 #define P_ALOLAN_FORMS                   P_REGIONAL_FORMS
 #define P_GALARIAN_FORMS                 P_REGIONAL_FORMS
 #define P_HISUIAN_FORMS                  P_REGIONAL_FORMS
 #define P_PALDEAN_FORMS                  P_REGIONAL_FORMS
 
 // Grandes grupos de formas que no siempre se desean al elegir familias.
-#define P_PIKACHU_EXTRA_FORMS            TRUE
+#define P_PIKACHU_EXTRA_FORMS            FALSE
 #define P_COSPLAY_PIKACHU_FORMS          P_PIKACHU_EXTRA_FORMS
 #define P_CAP_PIKACHU_FORMS              P_PIKACHU_EXTRA_FORMS
 
