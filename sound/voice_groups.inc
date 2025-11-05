@@ -140,6 +140,7 @@
 .include "sound/voicegroups/johto_champion.inc"
 .include "sound/voicegroups/johto_leader.inc"
 .include "sound/voicegroups/johto_wild.inc"
+.include "sound/voicegroups/violet_city.inc"
 
 @ FRLG
 .include "sound/voicegroups/rg_follow_me.inc"

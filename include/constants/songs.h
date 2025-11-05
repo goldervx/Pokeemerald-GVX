@@ -494,7 +494,8 @@
 #define MUS_JOHTO_CHAMPION          610 // MUS_JOHTO_CHAMPION
 #define MUS_JOHTO_LEADER            611 // MUS_JOHTO_LEADER
 #define MUS_JOHTO_WILD              612 // MUS_JOHTO_WILD
-#define END_MUS                     MUS_JOHTO_WILD
+#define MUS_VIOLET_CITY             613 // MUS_VIOLET_CITY
+#define END_MUS                     MUS_VIOLET_CITY
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.

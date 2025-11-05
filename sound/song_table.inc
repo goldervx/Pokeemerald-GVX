@@ -614,6 +614,7 @@ gSongTable::
 	song mus_johto_champion, 0, 0
 	song mus_johto_leader, 0, 0
 	song mus_johto_wild, 0, 0
+	song mus_violet_city, 0, 0
 
 	.align 2
 dummy_song_header:

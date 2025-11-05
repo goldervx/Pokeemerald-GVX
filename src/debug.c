@@ -3632,7 +3632,8 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_RG_TEACHY_TV_MENU)        \
     X(MUS_JOHTO_CHAMPION)           \
     X(MUS_JOHTO_LEADER)             \
-    X(MUS_JOHTO_WILD)
+    X(MUS_JOHTO_WILD)               \
+    X(MUS_VIOLET_CITY)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \
